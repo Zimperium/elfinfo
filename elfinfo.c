@@ -277,7 +277,7 @@ int main( int argc, char **argv )
 	dump_symbols( input, get_section_by_name(input, ".symtab"),  get_section_by_name(input, ".strtab"));
 	dump_symbols( input, get_section_by_name(input, ".dynsym"),  get_section_by_name(input, ".dynstr"));
 	// just for testings
-	hexdump(input, get_section_by_name(input, ".strtab")->sh_offset, get_section_by_name(input, ".strtab")->sh_size);
+	//hexdump(input, get_section_by_name(input, ".strtab")->sh_offset, get_section_by_name(input, ".strtab")->sh_size);
 
         printf( "\n" );
 	free(input);
